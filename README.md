@@ -1,12 +1,10 @@
-# buildingauth
-Authentication Service for building
+# buildingauth - Authentication Service for building
 
-Questo modulo espone tre semplici servizi per l'autenticazione di dispositivi di domotica.
+A module with simple authentication services for devices
 
-Quick start
------------
+## API
 
-Add a user
+### Add a user
 
 ```javascript
 var auth = require('buildingauth');
@@ -16,7 +14,7 @@ auth.addUser('marco','passwd','marco.brizi@gmail.com', function(err) {
 });
 ```
 
-Get user info
+### Get user info
 
 ```javascript
 var auth = require('buildingauth');
@@ -26,7 +24,8 @@ auth.getUserInfo('marco', function(err,user){
 });
 ```
 
-Authenticate
+### Authenticate
+
 ```javascript
 var auth = require('buildingauth');
 
