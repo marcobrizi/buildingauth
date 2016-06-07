@@ -9,5 +9,11 @@ Quick start
 ```javascript
 var buildingauth = require('buildingauth');
 
-buildingauth.addUser('username','password');
+buildingauth.authenticate('username','password',function(err){
+  if (err instanceof Error) {
+    throw err;
+  }
+  console.log('Authenticated!');
+});
+
 ```
